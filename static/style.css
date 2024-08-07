@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  
+  
+  html {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .main{
+  
+       width: 100%;
+      background: rgba(45, 142, 58, 0.95);
+      backdrop-filter: blur(2px);
+      border-bottom: 1px solid rgba(59, 61, 61, 0.1);
+      height: 70px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
+      box-shadow: 2px 1px 4px 1px black;
+  }
+  
+  .create-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .create_request_button {
+    color: black;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    min-height: 20px;
+    min-width: 50px;
+    max-height: 40px;
+    max-width: 200px;
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: ultra-condensed;
+    background: white;
+    border-color: rgb(58, 126, 55);
+    border-style: solid;
+    border-width: 1px;
+    transition: .4s;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  
+  .account > a , .exit_account > a, .create_request_button > a {
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: inherit;
+}
+
+.container-2 a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  color: inherit;
+}
+
+.request_button a {
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: inherit;
+}
+  
+  
+  .create_request_button:hover{
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background: rgb(58,164,73);
+      border-color: rgba(0, 0, 0, 0.39);
+      transition: .4s;
+      cursor: pointer;
+  }
+  
+  
+  .account{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+      font-size: 22px;
+      color: black;
+      text-shadow: black;
+      transition: .4s;
+  }
+  
+  body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background: #f6f5f7;
+      background-image: url(/static/Images/main.jpg);
+        background-attachment: fixed; 
+      background-repeat: repeat-x;
+      background-size: cover;
+  }
+  
+  
+  
+  .header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex:2;
+  }
+  
+  .logo{
+    width: 140px;
+  }
+  
+  .bottom-logo{
+    font-size: 14px;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  #bl1{
+    color:black;
+  }
+  #bl2{
+    color: rgb(46,154,84);
+  }
+  
+  .content {
+    
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    
+   
+    text-align: justify;
+  }
+  
+  
+  .sticky, .hide:checked{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  
+  
+  .container-2{
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      flex-wrap: wrap;
+      margin: 20px;
+  }
+  
+  .container-2 .driver{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 450px;
+    width: 450px;
+    left: 0;
+    bottom: 0px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, rgb(58,164,73), rgb(17,59,62));
+    filter: hue-rotate(23deg);
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0,0,0,.8) 0 3px 8px -3px;
+  
+  }
+  
+  .container-2 .passenger{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 450px;
+    width: 450px;
+    left: 0;
+    bottom: 0px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, rgb(17,59,62), rgb(58,164,73));
+    filter: hue-rotate(9deg);
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0,0,0,.8) 0 3px 8px -3px;
+  
+  }
+  
+  .text-in-card{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 30px;
+  }
+  
+  .glue{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .glue2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .exit_account{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center; 
+    font-size: 13px;
+    color: grey;
+    
+    transition: .4s;
+  }
+  
+  .exit_account:hover{
+    color: rgba(128, 128, 128, 0.726);
+    
+    transition: .4s;
+    cursor: pointer;
+  }
+  
+  
+  .icon{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 20px 30px 7px 30px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 3px rgb(0 0 0 / 24%);
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;    
+    -moz-user-select: none;     
+    -ms-user-select: none;       
+    user-select: none; 
+  }
+  
+  .container-icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text_info{
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .text-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: white;
+    width: 100%;
+    height: 288px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  
+  .glue-text{
+    margin: 10px;
+  }
+  
+  .nickname{
+    color:white;
+    font-size: 22px;
+    text-shadow: 1px 2px 7px black;
+    margin-bottom: 8px;
+  }
+  
+    
+      section {
+        width: 50%;
+        min-height: inherit;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+        position: relative;
+      }
+      
+      section::before,
+      section::after {
+        content: "";
+        display: block;
+      
+        border-radius: 100%;
+      
+        position: absolute;
+      }
+      
+      
+  
+      .hide, .hide + label ~ div {
+        display: none;
+        transition: .4s;
+      }
+      
+      .hide + label,
+      .hide:checked + label {
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0;
+        border-radius: 20px;
+        width: 80px;
+        height: 35px;
+        background-color: rgb(58,164,73);
+        box-shadow: rgba(0,0,0,.8) 0 3px 8px -3px;
+        color: white;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+      }
+      
+      .hide:checked + label {
+        background-color: rgb(51, 141, 63);
+      }
+      
+      .hide:checked + label + div {
+        display: flex;
+        background: white;
+        border-radius: 20px;
+        box-shadow: rgba(0,0,0,.8) 0 3px 8px -3px;
+        padding: 20px;
+        width: 180px;
+        justify-content: center;
+        transition: .4s;
+        position: fixed;
+        margin-top: 60px;
+        z-index: 2;
+        align-items: stretch;
+      }
+  
+      .filter_button{
+        position: fixed;
+        z-index: 2;
+      }
+      .filter_button_name{
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;   
+        -khtml-user-select: none;    
+        -moz-user-select: none;      
+        -ms-user-select: none;       
+        user-select: none;          
+                           
+      }
+      
+      .filter-container{
+        display: flex;
+        
+        width: 240px;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      
+      .filter-container2{
+        display: flex;
+        width: 100%;
+        
+        justify-content: flex-end;
+        margin-right: 20px;
+        position: fixed;
+        z-index: 1;
+        top: 100px;
+        right: 0;
+        transition: all 0.3s linear;
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;   
+        -khtml-user-select: none;    
+        -moz-user-select: none;      
+        -ms-user-select: none;       
+        user-select: none; 
+      }
+      
+      .filter {
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        flex:1;
+    }
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: stretch;
+    }
+    .filter-container2.test{
+      transition: all 0.3s linear;
+      top: 0;
+    }
+  
+    .request_button {
+      color: black;
+      display: flex;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 15px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      min-height: 0px;
+      min-width: 50px;
+      max-height: 19px;
+      max-width: 130px;
+      text-decoration: none;
+      color: black;
+      padding: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-stretch: ultra-condensed;
+      background: white;
+      border-color: rgb(58, 126, 55);
+      border-style: solid;
+      border-width: 1px;
+      transition: .4s;
+      text-align: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 5px;
+      justify-content: center;
+    }
+    
+    .request_button:hover{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: rgb(58,164,73);
+        border-color: rgba(0, 0, 0, 0.39);
+        transition: .4s;
+        cursor: pointer;
+    }

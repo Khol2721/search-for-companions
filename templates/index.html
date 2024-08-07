@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/index.css" rel="stylesheet">
+    <title>Поиск попутчиков</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Поиск попутчиков</h1>
+        <div class="center">Хочешь найти <font color="red">попутчика</font>?!</div>
+        <div class="center">Создай заявку или найди нужного человека среди заявок, оставленных на <font color="lightgreen">сайте</font>.</div>
+        <div class="center"><font color="lightgreen">Приятного</font> пути!!!</div>
+        <a href=" {{ url_for('users.index') }} " class="floating-button">Войти</a>
+    </div>
+</body>
+</html>
